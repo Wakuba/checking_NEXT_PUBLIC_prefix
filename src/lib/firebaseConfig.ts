@@ -19,4 +19,13 @@ const firebaseApp = !apps.length ? initializeApp(firebaseConfig) : apps[0]
 const db = getFirestore(firebaseApp)
 export { db }
 
-console.log(db)
+import { doc, getDoc } from "firebase/firestore";
+
+const func = async () => {
+	const docRef = doc(db, "sample", "Vx7kUyUpVC86AXegEE7o");
+	const docSnap = await getDoc(docRef);
+	console.log(docSnap.data())
+}
+
+func()
+
