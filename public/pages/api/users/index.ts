@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import { sampleUserData } from '../../../../public/utils/sample-data'
+import { sampleUserData } from '../../../../static/utils/sample-data'
 
 const handler = (_req: NextApiRequest, res: NextApiResponse) => {
   try {
