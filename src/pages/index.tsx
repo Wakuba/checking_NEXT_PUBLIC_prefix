@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import Layout from '../components/Layout'
-import { db } from '../lib/firebaseConfig'
+import Layout from './../components/Layout'
+import { db } from './../lib/firebaseConfig'
 import { doc, getDoc } from "firebase/firestore";
 
 const IndexPage = () => {
